@@ -99,13 +99,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             TextField(controller: TextEditingController(text: 'My text field')),
             Checkbox(value: true, onChanged: (value) {}),
-            Switch(value: true, onChanged: (value){}),
+            Switch(value: true, onChanged: (value) {}),
             const Text(
               'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
