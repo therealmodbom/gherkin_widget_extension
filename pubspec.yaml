@@ -2,8 +2,8 @@
 publish_to: "none"
 
 name: gherkin_widget_extension
-description: An extension of gherkin package for widgets
-version: 1.0.1
+description: Fork of the famous extension of gherkin package for widgets
+version: 1.1.0
 homepage: https://github.com/sncf-connect-tech/gherkin_widget_extension
 
 environment:
@@ -16,15 +16,20 @@ dependencies:
     flutter_test:
         sdk: flutter
     glob: ^2.1.1
-    # gherkin: ^3.1.0
-    gherkin:
-        path: ../dart_gherkin
+    gherkin: ^3.1.0
+    # gherkin:
+    #     path: ../dart_gherkin
     logger: ^2.5.0
     xml: ^6.0.1
     path: ^1.8.1
 
 dev_dependencies:
     flutter_lints: ^2.0.0
+
+dependency_overrides:
+    gherkin:
+        git:
+            url: https://github.com/therealmodbom/dart_gherkin.git
 
 flutter:
     uses-material-design: true
